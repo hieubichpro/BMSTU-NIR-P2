@@ -1,0 +1,36 @@
+\documentclass{bmstu}
+\usepackage{tocloft}
+
+\bibliography{parts/biblio}
+
+\setlist[enumerate]{label=\arabic*)}
+
+\begin{document}
+
+\makeresearchtitle
+	{Информатика и системы управления} % Название факультета
+	{Программное обеспечение ЭВМ и информационные технологии} % Название кафедры
+	{Классификация известных методов подсчета количества человек на видео} % Тема работы
+	{Фам~М.~Х./ИУ7И-72Б} % Номер группы/ФИО студента (если авторов несколько, их необходимо разделить запятой)
+	{Никульшина~Т.~А.} % ФИО научного руководителя
+	{} % ФИО консультанта (необязательный аргумент; если консультантов несколько, их необходимо разделить запятой)
+
+\setcounter{page}{3}
+\include{parts/essay}
+\cftsetindents{chapter}{\parindent}{12.5mm}
+\cftsetindents{section}{\parindent}{12.5mm}
+\cftsetindents{subsection}{\parindent}{12.5mm}
+\setlength{\cftbeforetoctitleskip}{-22pt}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\contentsname}{\hfill\LARGE СОДЕРЖАНИЕ\hfill}
+\tableofcontents
+%\include{parts/02-def}
+\include{parts/03-abbr}
+\include{parts/04-intro}
+\include{parts/05-analysis}
+\include{parts/TASK}
+\include{parts/06-conclusion}
+\makebibliography
+\include{parts/07-appendix}
+
+\end{document}
